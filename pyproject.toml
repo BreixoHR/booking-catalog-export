@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "booking-catalog-export"
+version = "2.0.0"
+description = "Exporta catálogo y precios de Regiondo y TuriTop a JSON, CSV y Google Things To Do"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []  # solo biblioteca estándar
+
+[project.scripts]
+booking-catalog = "catalog.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
